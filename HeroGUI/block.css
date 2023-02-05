@@ -14,12 +14,6 @@ ul {
     list-style: none;
 }
 
-body {
-    background: rgb(231, 231, 231);
-}
-
-
-
 /* sticky navbar */
 .sticky {
     position: fixed;
@@ -56,16 +50,20 @@ nav{
     margin: 0 20px;
 }
 
+.logo {
+    cursor: pointer;
+}
 
-
-
+.logo {
+    color: dodgerblue;
+}
 
 /* hero section login and signup button */
 
 /* hero section login button */
 
 .login-button {
-    padding: 5px 13px;
+    padding: 7px 13px;
     background: dodgerblue;
     border-radius: 30px;
     border-color: white;
@@ -73,12 +71,22 @@ nav{
     text-decoration: none;
     text-align: center;
     margin-right: 5px;
+    transition: ease 0.4s;
 }
+
+/* hover for login button  */
+
+.login-button:hover {
+    background: white;
+    color: black;
+    border-color: white;
+}
+
 
 /* hero section signup button  */
 
-.signup-button {
-    padding: 5px 13px;
+.get-started-button {
+    padding: 7px 13px;
     background: dodgerblue;
     border-radius: 30px;
     border-color: white;
@@ -86,6 +94,15 @@ nav{
     text-decoration: none;
     text-align: center;
     margin-left: 5px;
+    transition:  0.4s;
+}
+/* get started button hover */
+
+.get-started-button:hover {
+    background: white;
+    color: black;
+    border-color: white;
+    
 }
 
 
@@ -132,6 +149,7 @@ header {
 .header-content h1 {
     font-size: 7vmin;
     margin-top: 10px;
+    transition: ease 0.6;
 }
 
 
@@ -156,14 +174,22 @@ header {
     text-align: center;
     margin-left: 5px;
     font-size:large;
+    transition: ease 0.4s;
 }
+
+/* start button hover effect */
+
+.start-button:hover {
+    background-color: dodgerblue;
+    border: none;
+}
+
 
 /* feature section */
 
 section {
     width: 90%;
     margin: 80px auto;
- 
 }
 
 /* title of feature section */
@@ -172,6 +198,7 @@ section {
     font-size: 4vmin;
     text-align: left;
     color: #20262E;
+    margin-bottom: 40px;
 }
 
 /* for desiging or asthetics  */
@@ -199,7 +226,8 @@ section {
 .wrapper {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    /* margin-top: 40px; */
+    margin: 40px 60px;
   
 
     
@@ -237,10 +265,58 @@ section {
 /* image inside the box */
 
 .image {
-    width: 300px;
+    width: 200px;
 }
 
-/* asthetics for feature */
+/* feature section ends */
+
+
+/* highlights section starts */
+
+.content-highlights {
+    margin: 19px 16px;
+    display: flex;
+    justify-content: center;
+    background: #b29ddf;
+    padding: 19px 16px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+/* text container */
+
+.text-container {
+    width: 40%;
+    margin-right: 30px;
+}
+
+/* youtube video */
+
+.iframe-vid {
+    width: 500px;
+    height: 281px;
+}
+
+/* button  */
+
+.highlights-button {
+    padding: 6px 15px;
+    font-size: medium;
+    border: solid 2px #20262E;
+    border-radius: 6px;
+    background-color: #20262E;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: ease 0.4s;
+    font-weight:500;
+}
+
+.highlights-button:hover {
+    background-color: white;
+    border-color: white;
+    color: black;
+}
 
 
 
@@ -301,6 +377,10 @@ section {
     .start-button {
         font-size: small;
     } 
+
+    .get-started-button {
+        display: none;
+    }
 }
 
 
@@ -329,4 +409,28 @@ section {
     }
 }
 
+/* media query for highlights */
 
+
+@media only screen  and (max-width:850px) {
+    .content-highlights {
+        flex-direction: column-reverse;
+        margin: 10px 12px;
+        align-items: center;
+        padding-bottom: 30px;
+        
+    }
+
+    .text-container {
+        min-width: 100%;
+        margin-left: 40px;
+    }
+
+    .iframe-vid {
+        width: 300px;
+        height: 168px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+}
