@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="block.css" />
+    <link rel="icon" href="/images/logo-figma.png" />
+    <title>Chat with Eliza</title>
+  </head>
+  <body>
+    <!-- nav bar -->
+
+    <nav class="sticky" id="menu-bar">
+      <h1 class="logo">ChatBot</h1>
+      <ul class="nav-links">
+        <li><a href="">Home</a></li>
+        <li><a href="">Features</a></li>
+        <li><a href="">Highlights</a></li>
+        <li><a href="">About</a></li>
+        <li>
+          <a href="#" class="login-button">Login</a>
+          <a href="#" class="signup-button">SignUp</a>
+        </li>
+      </ul>
+      <img src="/images/hamburger.png" class="menu-btn" />
+    </nav>
+
+    <!-- hero section -->
+
+    <header>
+      <div class="header-content">
+        <h1>I'm Eliza</h1>
+        <div class="header-subcontent">
+          <h2>I am your companion througout your college journey</h2>
+        </div>
+        <a class="start-button" href="/ChatGUI/gui.html" target="_blank"
+          >Start</a
+        >
+      </div>
+    </header>
+
+    <!-- script for mobile view   -->
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const navlinks = document.querySelector(".nav-links");
+
+      menuBtn.addEventListener("click", () => {
+        navlinks.classList.toggle("mobile-menu");
+      });
+    </script>
+
+    <!-- script for sticky nav bar -->
+
+    <script src="/javascript/script.js"></script>
+
+    <!-- features section -->
+
+    <section>
+      <div class="title">
+        <h1>Feature</h1>
+        <div class="line"></div>
+        <div class="inlinee"></div>
+      </div>
+
+      <div class="wrapper">
+        <div class="block-1">
+          <img class="image" src="/images/400x400.png" alt="" />
+          <div class="block-1-content">
+            <h2>Title</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              quaerat atque iste quis fugit pariatur obcaecati cupiditate facere
+              natus beatae voluptatum officia id illo tenetur, ullam culpa error
+              provident laborum nobis. Reiciendis illum, explicabo delectus
+              animi eum dolor? Neque, unde.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <div class="block-2">
+          <img class="image" src="/images/400x400.png" alt="" />
+          <div class="block-2-content">
+            <h2>Title</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+              soluta qui, sit ipsum odio in laudantium atque et reprehenderit?
+              Porro laudantium error nisi aperiam, numquam reprehenderit
+              corporis similique quis! Eligendi eos quae, ipsum explicabo
+              veritatis aliquid labore incidunt tenetur nisi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlights">
+      <div class="title">
+        <h1>Highlights</h1>
+        <div class="line"></div>
+        <div class="inlinee"></div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat here</title>
+    <link rel="stylesheet" href="gui.css" />
+    <link rel="icon" href="/images/logo-figma.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- chat area whole block -->
+    <div class="wrapper">
+      <!-- chat area -->
+      <section class="chat-area">
+        <header>
+          <img src="/images/logo-figma.png" alt="" />
+          <div class="details">
+            <span>ChatBot</span>
+            <p>Active Now</p>
+          </div>
+        </header>
+
+        <!-- chatbox bot and user -->
+
+        <div class="chat-box">
+          <!-- bot message -->
+          <div class="chat incoming">
+            <img src="/images/logo-figma.png" alt="" />
+            <div class="details">
+              <p>Hey!😊
+                 <br/>
+                 I'm Eliza. <br> 
+              Happy to see you here👋</p>
+            </div>
+          </div>
+
+          <div class="chat outgoing">
+            <div class="details">
+              <p>
+                Hola! <br />
+                I wanted to know how to apply for scholarship
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="msg-quick-reply">
+          <div class="btn-wrap">
+            <button class="btn-quick-reply">Admission</button>
+            <button class="btn-quick-reply">Hostel</button>
+            <button class="btn-quick-reply">Scholarship</button>
+            <button class="btn-quick-reply">Courses</button>
+            <button class="btn-quick-reply">Courses</button>
+          </div>
+        </div>
+        <form action="#" class="typing-area">
+          <input type="text" class="incoming_id" name="" value="" hidden />
+          <input
+            type="text"
+            name="message"
+            class="input-field"
+            placeholder="Type a message here..."
+            autocomplete="off"
+          />
+          <button><i class="fab fa-telegram-plane"></i></button>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
